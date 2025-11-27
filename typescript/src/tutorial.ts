@@ -122,3 +122,31 @@ console.log(colors);
 let mixedArray: (number | string | boolean)[] = [57, "web developer", true];
 mixedArray.push(22, "graphic designer", false);
 console.log(mixedArray);
+
+// Objects
+let car: { brand: string; year: number } = { brand: "toyota", year: 2022 };
+car.brand = "Dodge";
+
+let car1: { brand: string; year: number } = { brand: "lexus", year: 2024 };
+car1.brand = "volvo";
+
+let book = { title: "book", cost: 20 };
+let pen = { title: "pen", cost: 10 };
+let notebook = { title: "notebook" };
+
+let items: { readonly title: string; cost?: number }[] = [book, pen, notebook];
+console.log(items);
+
+let bike: { brand: string; year: number } = { brand: "yamaha", year: 2022 };
+let laptop: { brand: string; year: number } = { brand: "apple", year: 2021 };
+let stuff: { brand: string; year: number }[] = [bike, laptop];
+
+stuff.push({ brand: "RCA", year: 2025 });
+console.log(stuff);
+
+let product1 = { title: "shirt", price: 20 };
+let product2 = { title: "pants" };
+let products: { title: string; price?: number }[] = [product1, product2];
+
+products.push({ title: "shoes" });
+console.log(products);
