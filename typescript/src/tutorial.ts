@@ -88,3 +88,37 @@ console.log(orderStatus);
 let discount: number | string = 20;
 discount = "20%";
 console.log(discount);
+
+// Arrays
+let prices: number[] = [100, 85, 63];
+prices.push(16);
+console.log(prices);
+
+let fruit: string[] = ["apple", "orange", "banana", "grapes"];
+fruit.push("watermelon");
+console.log(fruit);
+
+// TypeScript allowed a number with strings.
+let names = ["Chuck D", "Flava Flav", 7];
+console.log(names);
+
+let array: (string | number | boolean)[] = ["Darth Vader", 1980, true, "Luke Skywalker", 1977, false];
+console.log(array);
+
+/* ## Challenge
+- Create an array of temperatures and push 1 into the array.
+- Create an array of colors and push 1 into the array.
+- Create a mixed array with a number, string, and boolean values and push these same values into the array.
+*/
+
+let temperatures: number[] = [75, 60, 42];
+temperatures.push(10);
+console.log(`In the last 4 days it has been ${temperatures} degrees in St. Louis, MO.`);
+
+let colors: string[] = ["red", "black", "blue", "gold"];
+colors.push("silver");
+console.log(colors);
+
+let mixedArray: (number | string | boolean)[] = [57, "web developer", true];
+mixedArray.push(22, "graphic designer", false);
+console.log(mixedArray);
